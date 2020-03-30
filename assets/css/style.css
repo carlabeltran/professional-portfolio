@@ -174,48 +174,6 @@ body {
   padding-top: 30px; 
 }
 
-.button {
-  display: inline;
-  padding: 0.5em 1.0em;
-  border-radius: 4px;
-  background: #F8F8F8;
-  font-size: 16px;
-  border: 1px solid #f37370;
-  cursor: pointer;
-  margin: 10px;
-  color: #000;
-  -webkit-transition: background 0.3s;
-  -moz-transition: background 0.3s;
-  transition: background 0.3s;
-}
-
-.button:hover {
-  background-color: #f37370;
-  color: white;
-}
-
-.button:active,
-.button.is-active {
-  background-color: #f37370;
-  color: white;
-  outline: none;
-}
-
-.button-group {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.button-group:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-
-
-
-
 
 /* FOOTER */
 
