@@ -1,21 +1,33 @@
+/* GOOGLE FONTS RAMABHADRA */
 @import url("https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap");
 
-* {
+html {
   box-sizing: border-box;
 }
 
-body {
-  margin: 40px;
-  height: 2000px;
-  background-color: white;
-  font-family: "Ramabhadra", sans-serif;
-  font-size: 1.15em;
-  text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-/* SOCIAL MEDIA STICKY BAR */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
+/* ORIGINAL */
+body {
+  font-family: "Ramabhadra", sans-serif;
+  margin: 0;
+}
+
+footer,
+header {
+  display: block;
+}
+
+/* STICKY SOCIAL MEDIA BAR */
 .icon-bar {
   position: fixed;
   top: 50%;
@@ -23,7 +35,6 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .icon-bar a {
   display: block;
   text-align: center;
@@ -32,93 +43,52 @@ body {
   color: black;
   font-size: 20px;
 }
-
 .icon-bar a:hover {
   background-color: #f37370;
   color: white;
 }
-
 .facebook {
   color: black;
 }
-
 .twitter {
   color: black;
 }
-
 .google {
   color: black;
 }
-
 .linkedin {
   color: black;
 }
-
 .youtube {
   color: black;
 }
-
-/* MAIN CONTENT */
-.content {
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 30px;
-}
-
-/* 1ST HEADER 2ND HEADER */
-.box {
+.github {
   color: black;
-  padding: 10px;
-  font-size: 30px;
-  font-family: "Ramabhadra", sans-serif;
 }
-
-/* MIDDLE HEADER */
-.box:nth-child(even) {
-  color: #000;
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-bottom: 2em;
-}
-
-.nav-link {
+.instagram {
   color: black;
-  font-size: 16px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-family: "Ramabhadra", sans-serif;
-  text-decoration: none;
 }
 
 /* CONTAINER HOLDS WORK HEADER & GALLERY */
 .work-container {
   background-color: #F8F8F8;
 }
-
 .work-header{
   text-align: center;
   padding: 30px 0 120px; 
 }
-
 .column {
   float: left;
   width: 50%;
   align-content: center;
   text-align: center;
 }
-
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* FIRST COLUMN */
-
 .work-text {
   align-items: center;
   align-content: center;
@@ -126,27 +96,22 @@ body {
   padding-top: 30px;
   margin-top: 30px;
 }
-
 .wt1 {
   text-align: center;
   margin: 0px;
   padding:0px;
 }
-
 .wt2 {
   text-align: center;
   margin: 0px;
   padding:0px;
 }
-
 .wt {
   font-size: 95px;
   padding: 0px;
   margin: 0px;
 }
-
 /* SECOND COLUMN */
-
 .work-description {
   align-items: center;
   align-content: center;
@@ -174,25 +139,91 @@ body {
   padding-top: 30px; 
 }
 
-
-/* FOOTER */
-
+/* END OF SOCIAL MEDIA STICKY BAR */
+.row-photo-grid img {
+  margin-bottom: -8px;
+}
+.button-one {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.button-one {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.button-one:disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+.work-header-container:after,
+.work-header-container:before,
+.row-photo-grid:after,
+.row-photo-grid:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column-photo-grid {
+  float: left;
+  width: 100%;
+}
+@media (min-width: 601px) {
+  .column-photo-grid {
+    width: 49.99999%;
+  }
+}
+.main-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content {
+  max-width: 980px;
+}
+.row-photo-grid-padding > .column-photo-grid {
+  padding: 0 8px;
+}
+.work-header-container {
+  padding: 0.01em 16px;
+}
+.xlarge {
+  font-size: 24px !important;
+}
+.padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+.padding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+.left {
+  float: left !important;
+}
+.right {
+  float: right !important;
+}
+.button-one:hover {
+  color: #000 !important;
+  background-color: #ccc !important;
+}
+.white {
+  color: #000 !important;
+  background-color: #fff !important;
+}
 footer {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+  margin-top:128px;
+  text-align: center;
 }
