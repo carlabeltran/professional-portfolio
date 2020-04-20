@@ -23,6 +23,60 @@ body {
   margin: 0;
 }
 
+/* STICKY SOCIAL MEDIA BAR */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #ff4040;
+  color: white;
+}
+
+.facebook {
+  color: black;
+}
+
+.twitter {
+  color: black;
+}
+
+.google {
+  color: black;
+}
+
+.linkedin {
+  color: black;
+}
+
+.youtube {
+  color: black;
+}
+
+.github {
+  color: black;
+}
+
+.instagram {
+  color: black;
+}
+
+/* END STICKY SOCIAL MEDIA BAR */
+
 /* MAIN CONTAINER */
 main {
   background-color: white;
@@ -42,7 +96,7 @@ main {
   background-color: #ececec; 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 	width: 100%;
   height: 800px;
 }
@@ -53,7 +107,7 @@ main {
   height: 800px;
   left: 98px;
   top: 0px;
-  overflow: hidden;
+  overflow: visible;
   justify-content: center;
 	align-items: center;
 }
@@ -61,27 +115,108 @@ main {
 .lc {
   position: absolute;
   background-color: #ff4040;
-  overflow: hidden;
+  overflow: visible;
   top: 0px;
   left: 0;
 	width: 50%;
-	/* position: absolute;
-	width: 529px;
-	height: 750px;
-	left: 556px;
-	 */
 }
+
 
 .wrapper {
   position: relative;
-  padding: 20px;
+  padding: 30px;
   color: rgba(black, 0.5);
   height: 5px;
   width: 5px;
   align-items: center;
-  margin-top: 50%;
-  margin-left: 30px;
+  margin-top: 40%;
+  margin-left: 10px;
+  display: inline-block;
+  cursor: pointer;
 }
+
+.menu-icon {
+  display: -webkit-box;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 35px;
+  height:25px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: -30px;
+}
+
+.menu-icon div {
+  align-self: flex-end;
+  height: 4px;
+  width: 100%;
+  background: #000;
+}
+
+.menu-icon .bar-one{
+  width: 75%;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.menu-icon .bar-three{
+  width: 50%;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.menu-icon:hover div {
+  width: 100%;
+}
+
+.menu-icon:hover .bar-one {
+  -webkit-animation: menu-hover 1s infinite ease-in-out alternate;
+        animation: menu-hover 1s infinite ease-in-out alternate;
+}
+
+.menu-icon:hover .bar-two {
+  -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
+        animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
+}
+
+.menu-icon:hover .bar-three {
+  -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
+        animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
+}
+
+@-webkit-keyframes menu-hover {
+    0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes menu-hover {
+    0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 
 div.m {
   margin-left: -100px;
@@ -93,6 +228,7 @@ div.m {
   background-color: transparent;
   -ms-transform: rotate(90deg);
   transform: rotate(270deg);
+  cursor: pointer;
 }
 
 div.e {
@@ -105,6 +241,7 @@ div.e {
   background-color: transparent;
   -ms-transform: rotate(90deg);
   transform: rotate(270deg);
+  cursor: pointer;
 }
 
 div.n {
@@ -117,6 +254,7 @@ div.n {
   background-color: transparent;
   -ms-transform: rotate(90deg);
   transform: rotate(270deg);
+  cursor: pointer;
 }
 
 div.u {
@@ -129,6 +267,7 @@ div.u {
   background-color: transparent;
   -ms-transform: rotate(90deg);
   transform: rotate(270deg);
+  cursor: pointer;
 }
 
 
@@ -137,12 +276,7 @@ div.u {
 	width: 50%;
   opacity: 0;
   top: 0px;
-	overflow: hidden;
-  /* position: absolute;
-  background-color: #ececec;
-	width: 529px;
-	height: 750px;
-	left: 556px; */
+	overflow: visible;
 }
 
 /******  END OF CONTAINER  *******/
@@ -178,7 +312,7 @@ div.u {
 
 /******  HELLO *******/
 .hello-parent {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
 }
@@ -437,8 +571,6 @@ div.u {
 }
 
 /******  END OF HELLO *******/
-
-
 
 
 /* WORK.HTML */
