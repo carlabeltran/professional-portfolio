@@ -11,10 +11,12 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
   font-size: 65.2%;
   box-sizing: border-box;
   font-weight: 400;
+  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* ORIGINAL */
@@ -22,6 +24,44 @@ body {
   font-family: "Ramabhadra", sans-serif;
   margin: 0;
 }
+
+.header {
+  padding-top: 20px;
+}
+
+.xlarge {
+  font-size: 24px !important;
+}
+
+.padding-64 {
+  padding-top: 64px !important;
+  padding-bottom: 64px !important;
+}
+
+.padding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.button-one:hover {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-top: 2px solid #ff4040;
+}
+
+.white {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
 
 /* STICKY SOCIAL MEDIA BAR */
 .icon-bar {
@@ -663,8 +703,8 @@ div.u {
   cursor: not-allowed;
   opacity: 0.3;
 }
-.work-header-container:after,
-.work-header-container:before,
+.header:after,
+.header:before,
 .row-photo-grid:after,
 .row-photo-grid:before {
   content: "";
@@ -690,35 +730,4 @@ div.u {
 .row-photo-grid-padding > .column-photo-grid {
   padding: 0 8px;
 }
-.work-header-container {
-  padding: 0.01em 16px;
-}
-.xlarge {
-  font-size: 24px !important;
-}
-.padding-64 {
-  padding-top: 64px !important;
-  padding-bottom: 64px !important;
-}
-.padding-24 {
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
-}
-.left {
-  float: left !important;
-}
-.right {
-  float: right !important;
-}
-.button-one:hover {
-  color: #000 !important;
-  background-color: #ccc !important;
-}
-.white {
-  color: #000 !important;
-  background-color: #fff !important;
-}
-footer {
-  margin-top:128px;
-  text-align: center;
-}
+
