@@ -10,32 +10,18 @@
   -webkit-box-sizing: border-box;
 }
 
-.show {
-  display: block;
-}
-
-.hide{
-  display: none;
-}
-
-
-html {
-  height: 100vh;
-  font-size: 65.2%;
-  box-sizing: border-box;
-  font-weight: 400;
+/* ORIGINAL */
+html, body {
+  font-family: "Ramabhadra", sans-serif;
   overflow: hidden;
   overflow-x: hidden;
-}
-
-
-/* ORIGINAL */
-body {
-  font-family: "Ramabhadra", sans-serif;
-  margin: 0;
+  align-content: center;
+  box-sizing: border-box;
+  height: 100vh; 
 }
 
 .header {
+  margin-top: 50px;
   padding-top: 20px;
 }
 
@@ -386,10 +372,9 @@ div.transbox-blog a {
 
 /* END OF MENU OVERLAY */
 
-.overlay a:hover, .overlay a:focus {
+/* .overlay a:hover, .overlay a:focus {
   color: #f1f1f1;
-}
-
+} */
 
 .closebtn {
   position: absolute;
@@ -429,18 +414,20 @@ main {
 /******  CONTAINER  *******/
 
 .container {
+  /* margin-top: auto; */
   background-color: #ececec; 
   box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
   position: relative;
   overflow: visible;
-	width: 100%;
-  height: 800px;
+  width: 100%;
+  min-height: 700px;
 }
 
 .fc {
   position: absolute;
-  width: 1085px;
-  height: 800px;
+  /* width: 1085px; */
+  width: 50%;
+  min-height: 700px;
   left: 98px;
   top: 0px;
   overflow: visible;
@@ -452,7 +439,7 @@ main {
   position: absolute;
   background-color: #ff4040;
   overflow: visible;
-  top: 0px;
+  top: 0;
   left: 0;
 	width: 50%;
 }
@@ -610,12 +597,11 @@ div.u {
   cursor: pointer;
 }
 
-
 .sc {
   left: 0;
 	width: 50%;
   opacity: 0;
-  top: 0px;
+  top: 0;
 	overflow: visible;
 }
 
@@ -678,13 +664,15 @@ div.u {
 
 /******  END OF CONTAINER  *******/
 
+
+
 /* RIGHT OVERLAY */
 .oc {
 	position: absolute;
-	top: 20%;
+	top: 0;
 	left: 50%;
 	width: 50%;
-	height: 100%;
+	min-height: 700px;
 	overflow: visible;
 }
 
@@ -708,13 +696,13 @@ div.u {
 }
 
 /******  HELLO *******/
-.hello-parent {
-  /* height: 100%; */
-  width: 100%;
-  margin: 0;
-}
+
 .hello-word {
-  margin-left:600px;
+  margin-left: 565px;
+  margin-top: 170px;
+  margin-right: 570px;
+  margin-bottom: 165px;
+  padding-left: 52px;
 }
 /* H ANIMATION */
 .H-left-stroke {
