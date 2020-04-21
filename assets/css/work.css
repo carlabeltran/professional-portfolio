@@ -13,10 +13,10 @@ html, body {
   align-content: center;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  overflow-x: hidden;
+  /* overflow: hidden;
+  overflow-x: hidden; */
   background-color: #6b0080;
-  color:#222;
+  color:#FFF;
   font-family: 'Amatic SC', cursive;
   font-family: 'Bangers', cursive;
   font-family: 'Dancing Script', cursive;
@@ -31,7 +31,6 @@ html, body {
   height: 100%;
   background-color: #6b0080;
 }
-
 .logo {
   font-size: 30px;
   font-weight: 600;
@@ -92,17 +91,14 @@ html, body {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate;
   animation: menu-hover 1s infinite ease-in-out alternate;
 }
-
 .menu-icon:hover .bar-two {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
   animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
 }
-
 .menu-icon:hover .bar-three {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
   animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
 }
-
 @-webkit-keyframes menu-hover {
     0% {
     width: 100%;
@@ -114,7 +110,6 @@ html, body {
     width: 100%;
   }
 }
-
 @keyframes menu-hover {
     0% {
     width: 100%;
@@ -254,7 +249,6 @@ div.u {
   color: #FFF;
 }
 /* END STICKY SOCIAL MEDIA BAR */
-
 /* MAIN CONTENT */
 .main {
   position: absolute;
@@ -262,26 +256,24 @@ div.u {
   width: 100%;
   top:0; 
 } 
-
-.row{
+.row-unequal{
   height: 100%;
   width: 100%;
 }
-.column {
+.column-unequal {
   float: left;
   height: 100%;
 }
-.column.side {   
+.column-side {   
   float: left;
   width: 10%;
 }
-.column.middle {
+.column-middle {
   width: 80%;
   align-items: center;
   align-content: center;
   align-self: center;
 }
-
 /* MENU OVERLAY */
 .menu-overlay {
   position: fixed;
@@ -305,7 +297,6 @@ div.u {
   margin: 0;
   padding: 0;
 }
-
 .menu-content {
   position: relative;
   top: 10%;
@@ -542,6 +533,30 @@ div.transbox-resume a {
   color: #222;
   cursor: pointer;
 }
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: yellow;
+  color: white;
+}
 @media screen and (max-height: 450px) {
   .menu-overlay a {font-size: 20px}
   .menu-overlay .closebtn {
@@ -551,15 +566,9 @@ div.transbox-resume a {
   }
 }
 /* END OF MENU OVERLAY */
-/* CLEAR FLOATS AFTER COLUMNS */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /* 3 COLUMNS STACK  */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .column-side, .column-middle {
     width: 100%;
   }
 }
