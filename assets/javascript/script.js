@@ -6,27 +6,26 @@ function openNav() {
 }
 openNav();
 
-
 // CLOSE MENU
 function closeNav() {
   document.getElementById("menu").style.width = "0%";
 }
 closeNav();
 
+
 //HOVER EFFECT FOR ABOUT ON MENU OVERLAY
 $(document).ready(function () {
-  
-  $(".transbox-about").on({
-    mouseenter: function () {
-      $(this).css("background-color", "#40e0d0");
-    },
-    mouseleave: function () {
-      $(this).css("background-color", "transparent");
-    },
-    click: function () {
-      $(this).css("background-color", "#40e0d0");
-    },
-  });
+    $(".transbox-about").on({
+      mouseenter: function () {
+        $(this).css("background-color", "#40e0d0");
+      },
+      mouseleave: function () {
+        $(this).css("background-color", "transparent");
+      },
+      click: function () {
+        $(this).css("background-color", "#40e0d0");
+      },
+    });
   $(".transbox-work").on({
     mouseenter: function () {
       $(this).css("background-color", "#b19cd9");
@@ -59,6 +58,31 @@ $(document).ready(function () {
     click: function () {
       $(this).css("background-color", "#ffff00");
     },
-  });
+  }); 
+
 });
 
+
+  $(".m").on({
+    mouseenter: function () {
+      $(this).css("margin-left", "5px");
+    },
+    mouseleave: function () {
+      $(this).css("margin-left", "-5px");
+    },
+    click: function () {
+      $(this).css("margin-left", "5px");
+    },
+  });
+
+  $(".n").on({
+    mouseenter: function () {
+      $(this).css("margin-left", "5px");
+    },
+    mouseleave: function () {
+      $(this).css("margin-left", "-5px");
+    },
+    click: function () {
+      $(this).css("margin-left", "5px");
+    },
+  });

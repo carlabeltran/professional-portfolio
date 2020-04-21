@@ -10,7 +10,6 @@
   -webkit-box-sizing: border-box;
 }
 
-/* ORIGINAL */
 html, body {
   font-family: "Ramabhadra", sans-serif;
   overflow: hidden;
@@ -18,11 +17,6 @@ html, body {
   align-content: center;
   box-sizing: border-box;
   height: 100vh; 
-}
-
-.header {
-  margin-top: 50px;
-  padding-top: 20px;
 }
 
 .xlarge {
@@ -58,12 +52,19 @@ html, body {
   background-color: #fff !important;
 }
 
+/* HEADER */
+.header {
+  margin-top: 50px;
+  padding-top: 20px;
+  color: #222;
+}
 
 /* STICKY SOCIAL MEDIA BAR */
 .icon-bar {
   position: fixed;
-  top: 50%;
-  right: 0;
+  top: 40%;
+  right: 0%;
+  margin: 20px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -74,7 +75,7 @@ html, body {
   text-align: center;
   padding: 16px;
   transition: all 0.3s ease;
-  color: black;
+  color: #222;
   font-size: 20px;
 }
 
@@ -84,38 +85,35 @@ html, body {
 }
 
 .facebook {
-  color: black;
+  color: #222;
 }
 
 .twitter {
-  color: black;
+  color: #222;
 }
 
 .google {
-  color: black;
+  color: #222;
 }
 
 .linkedin {
-  color: black;
+  color: #222;
 }
 
 .youtube {
-  color: black;
+  color: #222;
 }
 
 .github {
-  color: black;
+  color: #222;
 }
 
 .instagram {
-  color: black;
+  color: #222;
 }
-
 /* END STICKY SOCIAL MEDIA BAR */
 
-
 /* MENU OVERLAY */
-
 .menu-overlay {
   height: 100%;
   width: 0;
@@ -147,7 +145,6 @@ html, body {
 }
 
 /* HOME */
-
 div.background-home {
   text-align:center;
   font-weight:300;
@@ -191,7 +188,6 @@ div.transbox-home a {
 }
 
 /* ABOUT */
-
 div.background-about {
   text-align:center;
   font-weight:300;
@@ -236,7 +232,6 @@ div.transbox-about a {
 }
 
 /* WORK */
-
 div.background-work {
   text-align:center;
   font-weight:300;
@@ -256,7 +251,6 @@ div.background-work {
 
 div.transbox-work {
 	position:absolute;
-  /* background-color: #40e0d0; */
   opacity: 0.6;
   width:250px;
   height:24px;
@@ -281,7 +275,6 @@ div.transbox-work a {
 }
 
 /* CONTACT */
-
 div.background-contact {
   text-align:center;
   font-weight:300;
@@ -301,7 +294,6 @@ div.background-contact {
 
 div.transbox-contact {
 	position:absolute;
-  /* background-color: #40e0d0; */
   opacity: 0.6;
   width:280px;
   height:24px;
@@ -326,7 +318,6 @@ div.transbox-contact a {
 }
 
 /* BLOG */
-
 div.background-blog {
   text-align:center;
   font-weight:300;
@@ -346,7 +337,6 @@ div.background-blog {
 
 div.transbox-blog {
 	position:absolute;
-  /* background-color: #00ff00; */
   opacity: 0.6;
   width:250px;
   height:24px;
@@ -369,12 +359,7 @@ div.transbox-blog a {
   left:0;
   text-decoration: none;
 }
-
 /* END OF MENU OVERLAY */
-
-/* .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-} */
 
 .closebtn {
   position: absolute;
@@ -395,7 +380,6 @@ div.transbox-blog a {
   right: 35px;
   }
 }
-
 /* END OF MENU OVERLAY */
 
 /* MAIN CONTAINER */
@@ -411,28 +395,27 @@ main {
 .main-content {
   max-width: 980px;
 }
-/******  CONTAINER  *******/
 
+/* CONTAINER */
 .container {
-  /* margin-top: auto; */
-  background-color: #ececec; 
+  background-color: #ededed;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 10px rgba(0,0,0,0.22);
   position: relative;
   overflow: visible;
   width: 100%;
-  min-height: 700px;
+  max-width: 100%;
+  height: 700px;
+  max-height: 700px;
 }
 
 .fc {
   position: absolute;
-  /* width: 1085px; */
   width: 50%;
-  min-height: 700px;
   left: 98px;
   top: 0px;
   overflow: visible;
   justify-content: center;
-	align-items: center;
+  align-items: center;
 }
 
 .lc {
@@ -441,20 +424,16 @@ main {
   overflow: visible;
   top: 0;
   left: 0;
-	width: 50%;
+  width: 50%;
 }
 
 /* MENU ICON & TEXT */
-
 .wrapper {
   position: relative;
-  padding: 30px;
-  color: rgba(black, 0.5);
-  height: 5px;
-  width: 5px;
+  color: rgba(#222, 0.5);
+  height: 700px;
+  width: 100px;
   align-items: center;
-  margin-top: 40%;
-  margin-left: 10px;
   display: inline-block;
   cursor: pointer;
 }
@@ -476,8 +455,8 @@ main {
   height:25px;
   cursor: pointer;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 40%;
+  left: 6%;
   margin-left: -30px;
 }
 
@@ -506,17 +485,17 @@ main {
 
 .menu-icon:hover .bar-one {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate;
-        animation: menu-hover 1s infinite ease-in-out alternate;
+  animation: menu-hover 1s infinite ease-in-out alternate;
 }
 
 .menu-icon:hover .bar-two {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
-        animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
+  animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
 }
 
 .menu-icon:hover .bar-three {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
-        animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
+  animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
 }
 
 @-webkit-keyframes menu-hover {
@@ -544,6 +523,15 @@ main {
 }
 
 /* MENU TEXT */
+.menu-text{
+  width: 35px;
+  height:25px;
+  cursor: pointer;
+  position: absolute;
+  top: 38%;
+  left: 60%;
+  margin-left: -30px;
+}
 
 div.m {
   margin-left: -100px;
@@ -602,7 +590,7 @@ div.u {
 	width: 50%;
   opacity: 0;
   top: 0;
-	overflow: visible;
+  overflow: visible;
 }
 
 /* BOUNCING ARROW */
@@ -1014,4 +1002,3 @@ div.u {
 .row-photo-grid-padding > .column-photo-grid {
   padding: 0 8px;
 }
-
