@@ -1,11 +1,10 @@
-/* GOOGLE FONTS RAMABHADRA */
+/* GOOGLE FONT RAMABHADRA */
 @import url("https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap");
+/* GOOGLE FONT POPPINS */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bangers&family=Dancing+Script&family=Monoton&family=Montserrat&family=Poppins:wght@300;400;500;600&family=Sulphur+Point&display=swap');
-
 * {
   box-sizing: border-box;
 }
-
 html, body {
   font-family: "Ramabhadra", sans-serif;
   align-content: center;
@@ -23,13 +22,11 @@ html, body {
   font-family: 'Sulphur Point', sans-serif;
   font-family: 'Poppins', sans-serif;
 }
-
 .container-fluid{
   width: 100%;
   height: 100%;
   background-color: #f6f6f6;
 }
-
 /* FIRST LAYER */
 .background {
   position: relative;
@@ -38,7 +35,6 @@ html, body {
   justify-content: center;
   align-items: center; 
 }
-
 .left-container {
   position: absolute;
   background-color: #ff4040;
@@ -46,7 +42,6 @@ html, body {
   left: 0;
   width: 50%;
 }
-
 .logo {
   font-size: 30px;
   font-weight: 600;
@@ -55,7 +50,6 @@ html, body {
   color: #000;
   letter-spacing: 2px;
 }
-
 /* MENU ICON & TEXT */
 .wrapper {
   color: rgba(#000, 0.5);
@@ -65,7 +59,6 @@ html, body {
   display: inline-block;
   cursor: pointer;
 }
-
 /* MENU ICON */
 .menu-icon {
   display: -webkit-box;
@@ -86,45 +79,37 @@ html, body {
   left: 6%;
   margin-left: -30px;
 }
-
 .menu-icon div {
   align-self: flex-end;
   height: 4px;
   width: 100%;
   background: #000;
 }
-
 .menu-icon .bar-one{
   width: 75%;
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-
 .menu-icon .bar-three{
   width: 50%;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }
-
 .menu-icon:hover div {
   width: 100%;
 }
-
 .menu-icon:hover .bar-one {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate;
   animation: menu-hover 1s infinite ease-in-out alternate;
 }
-
 .menu-icon:hover .bar-two {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
   animation: menu-hover 1s infinite ease-in-out alternate forwards 200ms;
 }
-
 .menu-icon:hover .bar-three {
   -webkit-animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
   animation: menu-hover 1s infinite ease-in-out alternate forwards 400ms;
 }
-
 @-webkit-keyframes menu-hover {
     0% {
     width: 100%;
@@ -136,7 +121,6 @@ html, body {
     width: 100%;
   }
 }
-
 @keyframes menu-hover {
     0% {
     width: 100%;
@@ -148,7 +132,6 @@ html, body {
     width: 100%;
   }
 }
-
 /* MENU TEXT */
 .menu-text{
   width: 35px;
@@ -160,7 +143,6 @@ html, body {
   color: #000;
   font-weight: 600;
 }
-
 div.m {
   margin-left: -100px;
   width: 0px;
@@ -173,7 +155,6 @@ div.m {
   transform: rotate(270deg);
   cursor: pointer;
 }
-
 /* HOVER EFFECT UP AND DOWN */
 div.m:hover {
   margin-left: 5px;
@@ -185,7 +166,6 @@ div.m:hover {
   transform: rotate(270deg);
   cursor: pointer;
 }
-
 div.e {
   margin-left: -100px;
   width: 0px;
@@ -198,7 +178,6 @@ div.e {
   transform: rotate(270deg);
   cursor: pointer;
 }
-
 div.n {
   margin-left: 100px;
   width: 0px;
@@ -211,7 +190,6 @@ div.n {
   transform: rotate(270deg);
   cursor: pointer;
 }
-
 /* HOVER EFFECT UP AND DOWN */
 div.n:hover {
   margin-left: 5px;
@@ -225,7 +203,6 @@ div.n:hover {
   transform: rotate(270deg);
   cursor: pointer;
 }
-
 div.u {
   margin-left: 100px;
   width: 0px;
@@ -246,7 +223,6 @@ div.u {
   top: 0;
   background-color: #ededed;
 }
-
 /* STICKY SOCIAL MEDIA BAR */
 .icon-bar {
   position: fixed;
@@ -291,7 +267,6 @@ div.u {
   color: #222;
 }
 /* END STICKY SOCIAL MEDIA BAR */
-
 /* ENTIRE OVERLAY */
 .main {
   position: absolute;
@@ -303,26 +278,20 @@ div.u {
   height: 100%;
   width: 100%;
 }
-
 .column {
   float: left;
   height: 100%;
 }
-
 .column.side {   
   float: left;
   width: 10%;
-  /* background-color: #ff4040; */
 }
-
 .column.middle {
   width: 80%;
   align-items: center;
   align-content: center;
   align-self: center;
-  /* background-color: #fff; */
 }
-
 /******  HELLO SVG *******/
 .hello-parent {
   margin-top:250px;
@@ -585,7 +554,6 @@ align-items: center;
   }
 }
 /****** /.HELLO *******/
-
 /* BOUNCING ARROW */
 .arrow-icon{
   position: absolute;
@@ -593,18 +561,15 @@ align-items: center;
   right:20%;
   color: #222;
 }
-
 .arrow-icon:hover {
   cursor: pointer;
 }
-
 #bounce {
   -webkit-animation: bounce 2s;
   animation: bounce 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
 @-webkit-keyframes bounce {
   0%,
   25%,
@@ -623,7 +588,6 @@ align-items: center;
     transform: translateY(-12px);
   }
 }
-
 @keyframes bounce {
   0%,
   25%,
@@ -642,101 +606,18 @@ align-items: center;
     transform: translateY(-12px);
   }
 }
-
-/* The Overlay (background) */
-.menu-overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+/* MENU OVERLAY */
+.menu-overlay {   
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: #fff; /* Black fallback color */
-  /* background-color: rgba(0,0,0, 0.9); Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-.square {
-  position: absolute;
-  width: 20%;
-  height: 100%;
-  background-color: #ff4040;
-  right: 0;
-  top:0;
-  margin: 0;
-  padding: 0;
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.menu-overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .menu-overlay a {font-size: 20px}
-  .menu-overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-
-/* MENU OVERLAY */
-/* .menu-overlay {
   position: fixed;
-  height: 100%;
-  width: 100%;
   z-index: 1;
-  top: 0;
   left: 0;
+  top: 0;
   background-color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: 0.5s;
-  color:#000;
-} */
-
-.square {
-  position: absolute;
-  width: 20%;
-  height: 100%;
-  background-color: #ff4040;
-  right: 0;
-  top:0;
-  margin: 0;
-  padding: 0;
 }
-
 .overlay-content {
   position: relative;
   top: 10%;
@@ -750,7 +631,24 @@ align-items: center;
   vertical-align: middle;
   text-align: center;
 }
-
+.square {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  background-color: #ff4040;
+  right: 0;
+  top:0;
+  margin: 0;
+  padding: 0;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000;
+  display: block; 
+  transition: 0.3s; 
+}
 /* HOME CONTAINER */
 .home-container {
   width:600px;
@@ -758,7 +656,6 @@ align-items: center;
   max-height: 100px;
   max-width: 600px;
 }
-
 div.background-home {
   position:absolute;
   cursor: pointer;
@@ -768,7 +665,6 @@ div.background-home {
   top: 0;
   color: #000;
 }
-
 div.transbox-home {
   position:absolute;
   background-color: #ff4040;
@@ -779,7 +675,6 @@ div.transbox-home {
   top: 45%;
   left:-44%;
 }
-
 div.transbox-home a {
   position:absolute;
   cursor: pointer;
@@ -790,7 +685,6 @@ div.transbox-home a {
   text-decoration: none;
   color:#000;
 }
-
 /* ABOUT CONTAINER */
 .about-container {
   width:600px;
@@ -798,7 +692,6 @@ div.transbox-home a {
   max-height: 100px;
   max-width: 600px;
 }
-
 div.background-about {
   position:absolute;
   cursor: pointer;
@@ -808,7 +701,6 @@ div.background-about {
   top:17%;
   color: #000;
 }
-
 div.transbox-about {
   position:absolute;
   opacity: 0.6;
@@ -818,7 +710,6 @@ div.transbox-about {
   top: 45%;
   left:-44%;
 }
-
 div.transbox-about a {
   position:absolute;
   cursor: pointer;
@@ -829,7 +720,6 @@ div.transbox-about a {
   text-decoration: none;
   color:#000;
 }
-
 /* WORK */
 .work-container {
   width:600px;
@@ -837,7 +727,6 @@ div.transbox-about a {
   max-height: 100px;
   max-width: 600px;
 }
-
 div.background-work {
   position:absolute;
   cursor: pointer;
@@ -847,7 +736,6 @@ div.background-work {
   top: 35%;
   color: #000;
 }
-
 div.transbox-work {
   position:absolute;
   opacity: 0.6;
@@ -857,7 +745,6 @@ div.transbox-work {
   top: 45%;
   left:-45%;
 }
-
 div.transbox-work a {
   position:absolute;
   cursor: pointer;
@@ -868,7 +755,6 @@ div.transbox-work a {
   text-decoration: none;
   color:#000;
 }
-
 /* CONTACT  CONTAINER */
 .contact-container{
   width:600px;
@@ -876,7 +762,6 @@ div.transbox-work a {
   max-height: 100px;
   max-width: 600px;
 }
-
 div.background-contact {
   position:absolute;
   cursor: pointer;
@@ -887,7 +772,6 @@ div.background-contact {
   margin-left: -17px;
   color: #000;
 }
-
 div.transbox-contact {
   position:absolute;
   opacity: 0.6;
@@ -897,7 +781,6 @@ div.transbox-contact {
   top: 45%;
   left:-25%;
 }
-
 div.transbox-contact a {
   position:absolute;
   cursor: pointer;
@@ -908,7 +791,6 @@ div.transbox-contact a {
   text-decoration: none;
   color:#000;
 }
-
 /* BLOG */
 .blog-container{
   width:600px;
@@ -916,7 +798,6 @@ div.transbox-contact a {
   max-height: 100px;
   max-width: 600px;
 }
-
 div.background-blog {
   position:absolute;
   cursor: pointer;
@@ -926,7 +807,6 @@ div.background-blog {
   top: 65%;
   color: #000;
 }
-
 div.transbox-blog {
   position:absolute;
   opacity: 0.6;
@@ -936,7 +816,6 @@ div.transbox-blog {
   top: 45%;
   left:-55%;
 }
-
 div.transbox-blog a {
   position:absolute;
   cursor: pointer;
@@ -947,7 +826,6 @@ div.transbox-blog a {
   text-decoration: none;
   color:#000;
 }
-
 /* RESUME CONTAINER */
 .resume-container{
   width:600px;
@@ -955,7 +833,6 @@ div.transbox-blog a {
   max-height: 100px;
   max-width: 600px;
 }
-
 div.background-resume {
   position:absolute;
   cursor: pointer;
@@ -965,7 +842,6 @@ div.background-resume {
   top: 80%;
   color: #000;
 }
-
 div.transbox-resume {
   position:absolute;
   opacity: 0.6;
@@ -975,7 +851,6 @@ div.transbox-resume {
   top: 45%;
   left:-25%;
 }
-
 div.transbox-resume a {
   position:absolute;
   cursor: pointer;
@@ -986,7 +861,6 @@ div.transbox-resume a {
   text-decoration: none;
   color:#000;
 }
-
 /* CLOSE BUTTON */
 .closebtn {
   position: absolute;
@@ -998,8 +872,12 @@ div.transbox-resume a {
   color: #222;
   cursor: pointer;
 }
-
-/* HOME OVERLAY */
+.menu-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
 #home-overlay {
   position: fixed;
   top: 0;
@@ -1008,19 +886,15 @@ div.transbox-resume a {
   height: 100vh;
   background-color: #ff4040;
   z-index: 999;
-  /* We hide the overlay by default */
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
 }
-
-/* This CSS class will show the overlay */
 #home-overlay.show {
   visibility: visible;
   opacity: 1;
 }
-
-/* [OVERLAY TEXT] */
+/* OVERLAY TEXT */
 #o-text {
   margin: 10% auto 0 auto;
   max-width: 800px;
@@ -1030,8 +904,7 @@ div.transbox-resume a {
   text-align: center;
   font-size: 40px;
 }
-
-/* [OVERLAY CLOSE BUTTON] */
+/* OVERLAY CLOSE BUTTON */
 #o-close {
   position: absolute;
   margin-top: 20%;
@@ -1042,7 +915,12 @@ div.transbox-resume a {
   cursor: pointer;
   z-index: 1000;
 }
-
+/* END OF MENU OVERLAY */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media screen and (max-height: 450px) {
   .home-overlay {font-size: 20px}
   .home-overlay .close-home-overlay {
@@ -1052,8 +930,6 @@ div.transbox-resume a {
   } 
 }
 /* END OF HOME OVERLAY */
-
-
 @media screen and (max-height: 450px) {
   .menu-overlay a {font-size: 20px}
   .menu-overlay .closebtn {
@@ -1062,16 +938,6 @@ div.transbox-resume a {
   right: 35px;
   }
 }
-/* END OF MENU OVERLAY */
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
