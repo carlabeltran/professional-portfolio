@@ -12,7 +12,6 @@ function closeNav() {
 }
 closeNav();
 
-
 //HOVER EFFECT FOR ABOUT ON MENU OVERLAY
 $(document).ready(function () {
     $(".transbox-about").on({
@@ -57,6 +56,17 @@ $(document).ready(function () {
     },
     click: function () {
       $(this).css("background-color", "#ffff00");
+    },
+  }); 
+  $(".transbox-resume").on({
+    mouseenter: function () {
+      $(this).css("background-color", "#ffa500");
+    },
+    mouseleave: function () {
+      $(this).css("background-color", "transparent");
+    },
+    click: function () {
+      $(this).css("background-color", "#ffa500");
     },
   }); 
 
