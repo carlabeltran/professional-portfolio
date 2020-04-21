@@ -373,14 +373,16 @@ div.transbox-blog a {
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
+  .menu-overlay a {font-size: 20px}
+  .menu-overlay .closebtn {
   font-size: 40px;
   top: 15px;
   right: 35px;
   }
 }
 /* END OF MENU OVERLAY */
+
+
 
 /* MAIN CONTAINER */
 main {

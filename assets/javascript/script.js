@@ -1,19 +1,17 @@
 console.log("JAVA && HTML ARE LINKED!!")
 
-// OPEN MENU
-function openNav() {
-  document.getElementById("menu").style.width = "100%";
-}
-openNav();
-
-// CLOSE MENU
-function closeNav() {
-  document.getElementById("menu").style.width = "0%";
-}
-closeNav();
-
 //HOVER EFFECT FOR ABOUT ON MENU OVERLAY
 $(document).ready(function () {
+  var open = document.getElementById("o-open"),
+    close = document.getElementById("o-close"),
+    over = document.getElementById("home-overlay");
+  open.addEventListener("click", function () {
+    over.classList.add("show");
+  });
+  close.addEventListener("click", function () {
+    over.classList.remove("show");
+  });
+
     $(".transbox-about").on({
       mouseenter: function () {
         $(this).css("background-color", "#40e0d0");
@@ -72,7 +70,6 @@ $(document).ready(function () {
 
 });
 
-
   $(".m").on({
     mouseenter: function () {
       $(this).css("margin-left", "5px");
@@ -96,3 +93,21 @@ $(document).ready(function () {
       $(this).css("margin-left", "5px");
     },
   });
+
+  // OPEN MENU
+function openNav() {
+  document.getElementById("menu").style.width = "100%";
+}
+
+// CLOSE MENU
+function closeNav() {
+  document.getElementById("menu").style.width = "0%";
+}
+
+function on() {
+  document.getElementById("message-overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("message-overlay").style.display = "none";
+}
